@@ -8,7 +8,7 @@ export class Contractor implements Employee {
   }
 }
 
-export class FulltimeEmployeer implements Employee {
+export class FulltimeEmployee implements Employee {
   getSalary(): number {
     return 1000;
   }

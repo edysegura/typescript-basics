@@ -1,8 +1,8 @@
 import { SalaryService } from './calculator.service';
-import { Contractor, FulltimeEmployeer, Manager } from './employee.model';
+import { Contractor, FulltimeEmployee, Manager } from './employee.model';
 
 const salaryService = new SalaryService();
-salaryService.calculate(new FulltimeEmployeer());
+salaryService.calculate(new FulltimeEmployee());
 salaryService.calculate(new Contractor());
 salaryService.calculate(new Manager());
 
