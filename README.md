@@ -1,6 +1,6 @@
 # TypeScript Basics
 
-Learning TypeScript by doing and with pratical examples.
+Learning TypeScript by doing and with practical examples.
 
 ## References
 
