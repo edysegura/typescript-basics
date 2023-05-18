@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "htmlelement-type",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
