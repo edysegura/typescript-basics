@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "strategy": "ts-node ./strategy/main.ts"
+    "strategy": "ts-node ./strategy/main.ts",
+    "generics": "ts-node ./generics/index.ts"
   },
   "devDependencies": {
     "ts-node": "^10.9.1",
