@@ -1,4 +1,3 @@
 export default class FetchAdapter {
-    constructor() {
-    }
+  constructor() {}
 }
