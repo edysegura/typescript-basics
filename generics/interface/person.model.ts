@@ -1,5 +1,5 @@
 interface Comparable<T> {
-  compareTo(anotherPerson: T): number
+  compareTo(another: T): number
 }
 
 export class Person implements Comparable<Person> {
