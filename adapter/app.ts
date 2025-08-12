@@ -15,3 +15,4 @@ async function makeRequests(httpClient: HttpRequest) {
 
 makeRequests(new FetchAdapter())
 makeRequests(new AxiosAdapter())
+// makeRequests(new XMLHttpRequestAdapter())
