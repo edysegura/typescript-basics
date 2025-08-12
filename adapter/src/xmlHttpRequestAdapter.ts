@@ -1,6 +1,8 @@
 import { HttpRequest } from './HttpRequest'
 
 export class XMLHttpRequestAdapter implements HttpRequest {
+  clientName = 'XMLHttpRequestAdapter'
+
   async get(url: string): Promise<any> {
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest()

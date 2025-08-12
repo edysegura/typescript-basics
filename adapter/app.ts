@@ -7,12 +7,13 @@ const postUrl = 'https://jsonplaceholder.typicode.com/posts'
 const payload = { title: 'foo', body: 'bar', userId: 1 }
 
 async function makeRequests(httpClient: HttpRequest) {
+  console.log(`HTTP Client Implementation: ${httpClient}`)
   const getResponse = await httpClient.get(url)
-  console.log('GET response:', getResponse)
+  console.log('GET response: ✅')
   const postResponse = await httpClient.post(postUrl, payload)
-  console.log('POST response:', postResponse)
+  console.log('POST response: ✅')
 }
 
-makeRequests(new FetchAdapter())
-makeRequests(new AxiosAdapter())
+await makeRequests(new FetchAdapter())
+await makeRequests(new AxiosAdapter())
 // makeRequests(new XMLHttpRequestAdapter())

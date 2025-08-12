@@ -2,6 +2,8 @@ import axios from 'axios'
 import { HttpRequest } from './HttpRequest'
 
 export class AxiosAdapter implements HttpRequest {
+  clientName = 'AxiosAdapter'
+
   async get(url: string): Promise<any> {
     const response = await axios.get(url)
     return response.data
