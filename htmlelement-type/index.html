@@ -17,14 +17,16 @@
         <header>
           <h1>TypeScript Calculator</h1>
         </header>
-        <div class="grid">
-          <input type="number" id="numberA" placeholder="Number 1" required />
-          <input type="number" id="numberB" placeholder="Number 2" required />
-          <button>Add Numbers</button>
-        </div>
-        <footer>
-          <p>Result: <mark id="result">0</mark></p>
-        </footer>
+        <form id="calculator">
+          <div class="grid">
+            <input type="number" id="numberA" placeholder="Number 1" required />
+            <input type="number" id="numberB" placeholder="Number 2" required />
+            <button type="submit">Calculate Sum</button>
+          </div>
+          <footer>
+            <p>Result: <mark id="result">0</mark></p>
+          </footer>
+        </form>
       </article>
     </main>
   </body>
