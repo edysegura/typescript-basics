@@ -1,3 +1,8 @@
+/*
+ * You can run this example using bun
+ * bun index.html
+ */
+
 const button = document.querySelector('button')!
 const numberA = document.querySelector<HTMLInputElement>('#numberA')!
 const numberB = document.querySelector<HTMLInputElement>('#numberB')!
@@ -7,6 +12,8 @@ function add(numberA: number, numberB: number) {
   return numberA + numberB
 }
 
-button.addEventListener('click', () => {
+function performAddition() {
   result.textContent = add(+numberA.value, +numberB.value).toString()
-})
+}
+
+button.addEventListener('click', performAddition)
