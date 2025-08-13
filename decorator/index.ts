@@ -1,7 +1,9 @@
 function Logger(logString: string) {
   return function (target: Function) {
+    console.group('[decorator] Logger')
     console.log(logString)
     console.log(target)
+    console.groupEnd()
   }
 }
 
@@ -14,4 +16,4 @@ class Person {
   }
 }
 
-const p1 = new Person()
+new Person()
